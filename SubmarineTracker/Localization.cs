@@ -8,7 +8,7 @@ namespace SubmarineTracker;
 
 public class Localization
 {
-    public static readonly string[] ApplicableLangCodes = { "de", "ja", "fr" };
+    public static readonly string[] ApplicableLangCodes = { "de", "ja", "fr", "zh" };
 
     private const string FallbackLangCode = "en";
     private const string LocResourceDirectory = "loc";
@@ -55,6 +55,7 @@ public class Localization
             "de" => ClientLanguage.German,
             "fr" => ClientLanguage.French,
             "ja" => ClientLanguage.Japanese,
+            "zh" => ClientLanguage.ChineseSimplified,
             _ => ClientLanguage.English
         };
     }
